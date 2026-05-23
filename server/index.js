@@ -4,11 +4,12 @@ import dotenv from 'dotenv'
 import main from './config/config.js'
 import UserRoutes from "./routes/UserRoutes.js"
 import ContactRoutes from './routes/ContactRoutes.js'
-
+import dns from 'dns'
 
 dotenv.config()
 
 const app = express()
+dns.setServers(["1.1.1.1", "8.8.8.8"])
 
 main()
 

@@ -154,8 +154,7 @@ function Signup() {
             </p>
           )}
         </div>
-
-        {/* Button */}
+        
         <button className="bg-black text-white w-full py-2 rounded">
           Signup
         </button>
